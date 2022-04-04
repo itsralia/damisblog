@@ -17,14 +17,7 @@ const PostCard = ({ post }) => {
     </h1>
     <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
       <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 items-center">
-        <img
-          alt={post.author.name}
-          height="30px"
-          width="30px"
-          className="align-middle rounded-full"
-          src={post.featuredImage.url}
-        />
-        <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg">Dami {post.author.name}</p>
+        <p className="inline align-middle text-gray-700 ml-2 font-medium text-lg"> by Dami</p>
       </div>
       <div className="font-medium text-gray-700">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -38,7 +31,7 @@ const PostCard = ({ post }) => {
     </p>
     <div className="text-center">
       <Link href={`/post/${post.slug}`}>
-        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>
+        <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Read More</span>
       </Link>
     </div>
     </div>
